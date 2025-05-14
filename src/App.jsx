@@ -8,6 +8,10 @@ import Account from './component/Account';
 import NavBar from './component/NavBar';
 import Footer from './component/Footer';
 import Playground from './component/Playground';
+import Women from './component/Women'
+import Men from './component/Men';
+import Unisex from './component/Unisex';
+import Children from './component/Children'
 
 const App = () => {
    return (
@@ -22,6 +26,10 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/Account" element={<Account />} />
             <Route path="/Service" element={<Service />} />
+            <Route path="/Women" element={<Women />} />
+            <Route path="/Men" element={<Men/>} />
+            <Route path="/Unisex" element={<Unisex />} />
+            <Route path="/Children" element={<Children />} />
          </Routes>
 
          {/* Footer outside of Routes to always appear */}

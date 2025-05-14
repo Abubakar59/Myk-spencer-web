@@ -88,24 +88,22 @@ const NavBar = () => {
       )}
 
       {/* Bottom Navigation */}
-      <div className="bg-blue-950 text-white flex-wrap lg:flex items-center justify-around h-10 px-4">
-        <NavLink to="/new-arrival" className="py-2 block lg:inline-block">
-          New Arrival
+      <div className="bg-blue-950 text-white flex items-center justify-around h-10">
+       
+        <NavLink to="/" className="py-2 block lg:inline-block font-bold">
+          Home
         </NavLink>
-        <NavLink to="/top-deals" className="py-2 block lg:inline-block">
-          Top Deals
+        <NavLink to="/Women" className="py-2 block lg:inline-block font-bold">
+          Women
         </NavLink>
-        <NavLink to="/female" className="py-2 block lg:inline-block">
-          Female
+        <NavLink to="/Men" className="py-2 block lg:inline-block font-bold">
+          Men
         </NavLink>
-        <NavLink to="/male" className="py-2 block lg:inline-block">
-          Male
-        </NavLink>
-        <NavLink to="/unisex" className="py-2 block lg:inline-block">
+        <NavLink to="/unisex" className="py-2 block lg:inline-block font-bold">
           Unisex
         </NavLink>
-        <NavLink to="/hot-deals" className="py-2 block lg:inline-block">
-          Hot Deals
+        <NavLink to="/Children" className="py-2 block lg:inline-block font-bold">
+        Children
         </NavLink>
       </div>
     </nav>
