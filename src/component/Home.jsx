@@ -9,8 +9,101 @@ const Home = () => {
     <div>
       <Slider></Slider>
 
-      <Styles />
+      {/* <Styles /> */}
+      <div class="grid gap-4 p-4 md:grid-cols-4  justify-center  ">
 
+        <div class="h-87 bg-white p-6 justify-items-center shadow-lg  hover:shadow-xl transition duration-300">
+          <h3 class="text-lg font-semibold mb-4">Elevate Your Electronics</h3>
+
+          <div className='flex gap-2' >
+            <div>
+
+              <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Tablets._SY116_CB549022351_.jpg" alt="" className='h-25 ' />
+              <p>Tablet</p>
+            </div>
+            <div> <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Headphones._SY116_CB549022351_.jpg" alt="" className='h-25 ' />
+              <p>Headphone</p>
+            </div>
+          </div>
+
+
+          <div className='flex mt-5 gap-2 '>
+            <div>
+
+              <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Speakers._SY116_CB549022351_.jpg" alt="" className='h-25 ' />
+              <p>Music</p>
+            </div>
+
+            <div> <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Gaming._SY116_CB549022351_.jpg" alt="" className='h-25 ' />
+              <p>Gaming</p></div>
+
+          </div>
+        </div>
+
+        <div class="h-87 bg-white p-6 justify-items-center shadow-lg  hover:shadow-xl transition duration-300">
+          <h3 class="text-lg font-semibold mb-4">Shop deals in Fashion</h3>
+
+          <div className='flex gap-2' >
+            <div>
+
+              <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg" alt="" className='h-25 ' />
+              <p>Jeans under 40K</p>
+            </div>
+            <div> <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg" alt="" className='h-25 ' />
+              <p>Tops under 35k</p>
+            </div>
+          </div>
+
+
+          <div className='flex mt-5 gap-2 '>
+            <div>
+
+              <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg" alt="" className='h-25 ' />
+              <p>Dress under 20k</p>
+            </div>
+
+            <div> <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg" alt="" className='h-25 ' />
+              <p>Shoes under 75k</p></div>
+
+          </div>
+        </div>
+
+
+        <div class="w-75 bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-lg font-semibold mb-4">Get your game on</h3>
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg" alt="" />          
+          
+        </div>
+
+
+        <div class="h-87 bg-white p-6 justify-items-center shadow-lg  hover:shadow-xl transition duration-300">
+          <h3 class="text-lg font-semibold mb-4">Shop for your home essentials</h3>
+
+          <div className='flex gap-2' >
+            <div>
+
+              <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_1x._SY116_CB563137408_.jpg" alt="" className='h-25 ' />
+              <p>Cleaning tools</p>
+            </div>
+            <div> <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_1x._SY116_CB563137408_.jpg" alt="" className='h-25 ' />
+              <p>Home storage </p>
+            </div>
+          </div>
+
+
+          <div className='flex mt-5 gap-2 '>
+            <div>
+
+              <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_1x._SY116_CB563137408_.jpg" alt="" className='h-25 ' />
+              <p>Home Decor</p>
+            </div>
+
+            <div> <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Bedding_1x._SY116_CB563137408_.jpg" alt="" className='h-25 ' />
+              <p>Bedding</p></div>
+
+          </div>
+        </div>
+      </div>
 
 
       <div class="grid gap-4 p-4 md:grid-cols-4  justify-center  ">
@@ -47,10 +140,10 @@ const Home = () => {
 
 
         <h1 className='justify-center items-center flex font-extrabold text-2xl'>NEW Arrival</h1>
-        <div className='   grid gap-4 md:grid-cols-3 p-10 '>
-          <div><img src="https://themewagon.github.io/stylish/images/card-item6.jpg" alt="" /></div>
-          <div> <img src="https://themewagon.github.io/stylish/images/card-item7.jpg" alt="" /></div>
-          <div> <img src="https://themewagon.github.io/stylish/images/card-item8.jpg" alt="" /></div>
+        <div className='flex gap-6 md:grid-cols-3 p-10 md:justify-center md:gap-4 '>
+          <div><img src="https://themewagon.github.io/stylish/images/card-item6.jpg" alt="" className='w-40 md:w-85' /></div>
+          <div> <img src="https://themewagon.github.io/stylish/images/card-item7.jpg" alt="" className='w-40 md:w-85' /></div>
+          <div> <img src="https://themewagon.github.io/stylish/images/card-item8.jpg" alt="" className='w-40 md:w-85' /></div>
         </div>
       </div>
 
