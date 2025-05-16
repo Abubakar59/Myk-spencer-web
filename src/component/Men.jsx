@@ -4,7 +4,7 @@ const Male = () => {
   return (
     <div>
 
-<Styles />
+
 
       <div class="grid gap-4 p-4 md:grid-cols-4  justify-center  ">
 

@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Slider></Slider>
 
-      {/* <Styles /> */}
+      
       <div class="grid gap-4 p-4 md:grid-cols-4  justify-center  ">
 
         <div class="h-87 bg-white p-6 justify-items-center shadow-lg  hover:shadow-xl transition duration-300">
