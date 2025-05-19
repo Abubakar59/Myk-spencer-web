@@ -36,7 +36,7 @@ const CartPage = ({ cart, setCart }) => {
                   <p className="text-gray-600">Price: ${item.price}</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center mt-20">
                 <button
                   onClick={() => handleDecrement(item.id)}
                   className="bg-gray-300 text-gray-700 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-400 focus:outline-none"
