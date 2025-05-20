@@ -203,7 +203,7 @@ const Home = ({ Cart, setCart }) => {
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {products.map((product) => (
             <div key={product.id} className="bg-white p-4 shadow-lg rounded-lg hover:shadow-xl transition duration-300">
-              <img src={product.image} alt={product.title} className="w-full h-60 object-cover rounded mb-2" />
+              <img src={product.image} alt={product.title} className="w-full h-90  rounded mb-2" />
               <h3 className="text-lg font-semibold mb-1">{product.title}</h3>
               <p className="text-gray-800 font-bold mb-2">${product.price}</p>
               <button

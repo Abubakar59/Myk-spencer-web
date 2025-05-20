@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 function SignUp() {
-
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -22,8 +21,7 @@ function SignUp() {
             console.log(userData);
             // Call API to register user
             // ...
-            // Display user information
-            displayUserInfo(userData);
+            // displayUserInfo(userData);
         } else {
             setErrors(validationErrors);
         }
@@ -32,82 +30,108 @@ function SignUp() {
     const validateForm = () => {
         const errors = {};
         if (!firstName) {
-            errors.firstName = 'First name  cannot be Empty';
+            errors.firstName = 'First name cannot be empty';
         }
         if (!lastName) {
-            errors.lastName = 'Last name cannot be Empty';
+            errors.lastName = 'Last name cannot be empty';
         }
         if (!email) {
-            errors.email = 'Email cannot be Empty';
+            errors.email = 'Email cannot be empty';
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
             errors.email = 'Invalid email address';
         }
         if (!password) {
-            errors.password = 'Password cannot be Empty';
+            errors.password = 'Password cannot be empty';
         } else if (password.length < 8) {
             errors.password = 'Password must be at least 8 characters';
         }
-        if (!confirmPassword) {
-            errors.confirmPassword = '';
-        } else if (confirmPassword !== password) {
+        if (confirmPassword && confirmPassword !== password) {
             errors.confirmPassword = 'Passwords do not match';
         }
         return errors;
-
-    };
-
-    const displayUserInfo = (userData) => {
-
-        console.log('User information:');
-        console.log(userData);
-        // Display user information on the page
-        document.getElementById('user-info').innerHTML = `
-      
-      <p>Dear ${userData.firstName},</p>
-      <p>Unfortunately, Am  off line kindly Reach out to me 09052351059<p/>
-      
-    `;
     };
 
     return (
-        <div className=' bg-amber-400 items-center justify-center flex '>
-            <form onSubmit={handleSubmit} className='ml-5'>
-                <label>
-                    <div className='items-center justify-center flex text-2xl text-cyan-700'> Sign-up </div>
-                    <h1 className='text-zinc-600'> Please Kindly filling the form below</h1>
-                    First name:
-                    
-                    <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} className='bg-white border-2 rounded' />
-                    {errors.firstName && <div style={{ color: 'red' }}>{errors.firstName}</div>}
-                </label>
-                
-                <label>
-                    Last name: 
-                    <input type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} className='bg-white border-2 rounded' />
-                    {errors.lastName && <div style={{ color: 'red' }}>{errors.lastName}</div>}
-                </label>
-                
-                <label>
-                    Email:
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className='bg-white border-2 rounded' />
-                    {errors.email && <div style={{ color: 'red' }}>{errors.email}</div>}
-                </label>
-                
-                <label>
-                    Password:
-                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className='bg-white border-2 rounded' />
-                    {errors.password && <div style={{ color: 'red' }}>{errors.password}</div>}
-                </label>
-                
-                <label>
-                    Confirm password:
-                    <input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className='bg-white border-2 rounded' />
-                    {errors.confirmPassword && <div style={{ color: 'red' }}>{errors.confirmPassword}</div>}
-                </label>
-            
-                <button type="submit" className='bg-black text-white rounded-2xl w-20 h-8 mt-3 justify-center align-middle items-center flex'>Sign Up</button>
-            </form>
-            <div id="user-info"></div>
+        <div className="bg-gray-100 min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+            <div className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-full max-w-md">
+                <div className="mb-4 text-center">
+                    <h1 className="text-2xl font-bold text-gray-800">Sign Up</h1>
+                    <p className="text-sm text-gray-600 mt-1">Please fill out the form below</p>
+                </div>
+                <form onSubmit={handleSubmit}>
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="firstName">
+                            Full Name:
+                        </label>
+                        <input
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="firstName"
+                            type="text"
+                            placeholder="Your Full Name"
+                            value={firstName}
+                            onChange={(e) => setFirstName(e.target.value)}
+                        />
+                        {errors.firstName && <p className="text-red-500 text-xs italic">{errors.firstName}</p>}
+                    </div>
+
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                            Email:
+                        </label>
+                        <input
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email"
+                            type="email"
+                            placeholder="Email Address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                        {errors.email && <p className="text-red-500 text-xs italic">{errors.email}</p>}
+                    </div>
+
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+                            Password:
+                        </label>
+                        <input
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="password"
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                        {errors.password && <p className="text-red-500 text-xs italic">{errors.password}</p>}
+                    </div>
+
+                    <div className="mb-6">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="confirmPassword">
+                            Confirm Password:
+                        </label>
+                        <input
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="confirmPassword"
+                            type="password"
+                            placeholder="Confirm Password"
+                            value={confirmPassword}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
+                        />
+                        {errors.confirmPassword && <p className="text-red-500 text-xs italic">{errors.confirmPassword}</p>}
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                        <button
+                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="submit"
+                        >
+                            Sign Up
+                        </button>
+                        <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                            Already have an account? Log in
+                        </a>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 }

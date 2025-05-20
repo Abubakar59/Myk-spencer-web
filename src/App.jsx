@@ -14,6 +14,7 @@ import Men from './component/Men';
 import Unisex from './component/Unisex';
 import Children from './component/Children'
 import CartPage from './component/ CartPage'
+import Help from './component/Help'
 
 const App = () => {
    const [cart, setCart] = useState([]);
@@ -35,6 +36,8 @@ const App = () => {
             <Route path="/Men" element={<Men Cart={cart} setCart={setCart}/>} />
             <Route path="/Unisex" element={<Unisex Cart={cart} setCart={setCart}/>} />
             <Route path="/Children" element={<Children Cart={cart} setCart={setCart} />} />
+
+            <Route path="/Help" element={<Help/>} />
 
             <Route path="/Cart" element={<CartPage cart={cart} setCart={setCart} />} />
          </Routes>

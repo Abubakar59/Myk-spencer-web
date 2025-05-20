@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const CartPage = ({ cart, setCart }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleIncrement = (itemId) => {
     setCart(cart.map(item =>
       item.id === itemId ? { ...item, quantity: item.quantity + 1 } : item
@@ -43,7 +47,7 @@ const CartPage = ({ cart, setCart }) => {
                 >
                   -
                 </button>
-                <span className="text-lg">{item.quantity}</span>
+                <span className="text-lg mx-2">{item.quantity}</span>
                 <button
                   onClick={() => handleIncrement(item.id)}
                   className="bg-gray-300 text-gray-700 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-400 focus:outline-none"

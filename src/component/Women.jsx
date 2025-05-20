@@ -10,7 +10,7 @@ const Women = ({ Cart, setCart }) => {
       id: 1,
       name: "Elegant Floral Dress",
       price: 55,
-      image: "https://m.media-amazon.com/images/I/71navmnXXDL._AC_UL320_.jpg"
+      image: "https://m.media-amazon.com/images/I/718pgSB6UrL._AC_UL320_.jpg"
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const Women = ({ Cart, setCart }) => {
       id: 3,
       name: "Casual Summer Dress",
       price: 60,
-      image: "https://m.media-amazon.com/images/I/714Kb4FU7sL._AC_UL320_.jpg"
+      image: "https://m.media-amazon.com/images/I/71uFQGEsTBL._AC_UL320_.jpg"
     },
     {
       id: 4,
@@ -32,39 +32,55 @@ const Women = ({ Cart, setCart }) => {
     },
     {
       id: 5,
-      name: "Boho Chic Tunic",
+      name: "Hand bag",
       price: 45,
-      image: "https://m.media-amazon.com/images/I/81UK2mlXWZL._AC_UL320_.jpg"
+      image: "https://m.media-amazon.com/images/I/61v5F2tHCEL._AC_UL320_.jpg"
     },
     {
       id: 6,
-      name: "Denim Jacket",
+      name: "Denim backJacket",
       price: 70,
-      image: "https://m.media-amazon.com/images/I/71XPmp1eRkL._AC_UL320_.jpg"
+      image: "https://m.media-amazon.com/images/I/713uSERGO-L._AC_UL320_.jpg"
     },
     {
       id: 7,
-      name: "Striped Jumpsuit",
+      name: "Women vintage watch ",
       price: 68,
-      image: "https://m.media-amazon.com/images/I/71ffkixu8RL._AC_UL320_.jpg"
+      image: "https://m.media-amazon.com/images/I/71FSGw72QpL._AC_UL320_.jpg"
     },
     {
       id: 8,
-      name: "Chic Evening Gown",
+      name: "Track Suit ",
       price: 95,
-      image: "https://m.media-amazon.com/images/I/71sM+Et+SFL._AC_UL320_.jpg"
+      image: "https://m.media-amazon.com/images/I/71hCSl6Q2RL._AC_UL320_.jpg"
     },
     {
       id: 9,
       name: "Winter Coat",
       price: 110,
-      image: "https://m.media-amazon.com/images/I/81q14wZFeiL._AC_UL320_.jpg"
+      image: "https://m.media-amazon.com/images/I/51ZY+KF7AxL._AC_UL320_.jpg"
     },
     {
       id: 10,
       name: "Silk Blouse & Pants",
       price: 85,
-      image: "https://m.media-amazon.com/images/I/61AKR8gFQZL._AC_UL320_.jpg"
+      image: "https://m.media-amazon.com/images/I/61ZrmlYYuQL._AC_UL320_.jpg"
+    }
+
+
+    ,{
+      id:11,
+      name:"Adjustable cap for Women",
+      price: 5,
+      image:"https://m.media-amazon.com/images/I/71nGXZjgLGL._AC_UY218_.jpg"
+    }
+
+    ,{
+      id:12,
+      name: "babyhealthy Womens Crop Varsity Jacket",
+      price: 43,
+      image: "https://m.media-amazon.com/images/I/61dOUfX14xL._AC_UY218_.jpg",
+
     }
   ];
   
@@ -97,7 +113,7 @@ const Women = ({ Cart, setCart }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {products.map((product) => (
             <div key={product.id} className="bg-white p-4 shadow-lg rounded-lg hover:shadow-xl transition duration-300">
-              <img src={product.image} alt={product.name} className="w-full h-60 object-cover mb-2 rounded" />
+              <img src={product.image} alt={product.name} className="w-full h-90  mb-2 rounded" />
               <h3 className="text-lg font-semibold">{product.name}</h3>
 
               <p className="text-gray-800 font-bold">${product.price}</p>
