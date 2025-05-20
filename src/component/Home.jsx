@@ -67,6 +67,13 @@ const Home = ({ Cart, setCart }) => {
       price: 71,
       image: "https://m.media-amazon.com/images/I/81iJLmjmuLL._AC_UL320_.jpg"
     }
+
+    ,{
+      id: 9,
+      title: "Hudson Baby Unisex Baby Plush Animal Face Bathrobe",
+      price: 71,
+      image: "https://m.media-amazon.com/images/I/81LT+YaHYKL._AC_UL320_.jpg"
+    }
   ];
 
   const handleAddToCart = (product) => {

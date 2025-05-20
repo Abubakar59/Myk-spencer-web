@@ -53,6 +53,14 @@ const Children = ({ Cart, setCart }) => {
       price: 14,
       image: "https://m.media-amazon.com/images/I/71tTm9mZuyL._AC_UL320_.jpg"
     }
+,
+
+    {
+      id: 8,
+      title: "Hockvill Lcd Writting",
+      price: 14,
+      image: "https://m.media-amazon.com/images/I/81SNfYf1D5L._AC_UL320_.jpg"
+    }
   ];
 
   const handleAddToCart = (product) => {

@@ -52,6 +52,12 @@ const Male = ({ Cart, setCart }) => {
       title: "Denim Style Jacket",
       price: 55,
       image: "https://m.media-amazon.com/images/I/71BJipxKGqL._AC_SY200_.jpg"
+    },
+    {
+      id: 9,
+      title: "GLUDEAR Unisex Realistic 3D Digital Print Full Zip Hoodie Jackets Hooded Sweatshirt",
+      price: 55,
+      image: "https://m.media-amazon.com/images/I/71dvpSebSjL._AC_UL320_.jpg"
     }
   ];
 

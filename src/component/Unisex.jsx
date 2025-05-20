@@ -53,6 +53,12 @@ const Unisex = ({ Cart, setCart }) => {
       price: 55,
       image: "https://m.media-amazon.com/images/I/71BJipxKGqL._AC_SY200_.jpg"
     }
+
+    , {
+      id: 9,
+      title: "Unisex 3D Printed Hoodies Graphic Pullover Hooded Sweatshirt for Men Women",
+      price: 55,
+      image: "https://m.media-amazon.com/images/I/71SmBXK2gFL._AC_UL320_.jpg"}
   ];
 
   const handleAddToCart = (product) => {
