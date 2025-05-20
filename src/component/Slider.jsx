@@ -10,7 +10,7 @@ const Slider = () => {
                     <div>
                         <h1 className='justify-center items-center flex text-xl md:text-3xl text-white font-bold '>
 
-                            Welcome to MYK-Spencer
+                            Welcome to MYK-Spencer Fashion World
                         </h1>
                         <div className=' justify-items-center md:justify-items-start text-white text-[8px] font-extrabold md:py-10 md:text-2xl md:mt-20 '>
 

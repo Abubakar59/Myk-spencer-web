@@ -13,7 +13,7 @@ const NavBar = () => {
       {/* Top Bar */}
       <div className="bg-gray-300 px-4 md:px-8 flex items-center justify-between h-12 font-bold">
         <NavLink to="/" className="text-lg">
-          Myk-spencer
+          Myk-spencer Fashion World
         </NavLink>
 
         {/* Desktop Search */}

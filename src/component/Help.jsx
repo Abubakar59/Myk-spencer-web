@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Contact from './Contact'
 const Help = () => {
   return (
     <div>
@@ -82,8 +82,9 @@ const Help = () => {
           <li className="mb-1">Phone: +234 803 063 2690</li> {/* Replace with your actual number */}
           {/* Add other contact methods if available */}
         </ul>
-        <a href="/Contact" className="text-blue-500 hover:underline mt-2 block text-sm">Go to Contact Page</a>
+        <a href="/contact" className="text-blue-500 hover:underline mt-2 block text-sm">Go to Contact Page</a>
       </div>
+
     </div>
 
     <div className="mt-12 text-center">
